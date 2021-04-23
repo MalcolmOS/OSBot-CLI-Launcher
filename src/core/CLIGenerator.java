@@ -29,15 +29,13 @@ public class CLIGenerator {
         sb.append(this.getOSBotLogin());
         sb.append(this.getBotLogin());
         sb.append(this.getWorld());
+        sb.append(this.getScript());
 
         if (this.useProxy()) {
             sb.append(this.getProxy());
         }
         if (this.lowCPU) {
             sb.append(this.getLowCPU());
-        }
-        if (this.script != null) {
-            sb.append(this.getScript());
         }
         if (this.memAmount > 0) {
             sb.append(this.getMemoryUsage());
@@ -156,3 +154,4 @@ public class CLIGenerator {
         }
     }
 }
+
